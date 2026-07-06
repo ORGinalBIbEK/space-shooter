@@ -4,11 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://cnl5nmeq6ga2l" path="res://Backgrounds/darkPurple.png" id="1_w8frs"]
 [ext_resource type="PackedScene" uid="uid://cyqqgordmh7pa" path="res://scenes/meteor.tscn" id="3_mx8sn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60jjh"]
+size = Vector2(119, 720)
+
 [node name="Level" type="Node2D" unique_id=2099845822]
 
 [node name="bg" type="Sprite2D" parent="." unique_id=1034622610]
-position = Vector2(618, 318)
-scale = Vector2(5.5585933, 3.1445308)
+position = Vector2(629.25, 353.25003)
+scale = Vector2(5.646484, 3.4199216)
 texture = ExtResource("1_w8frs")
 
 [node name="Player" parent="." unique_id=442333348 instance=ExtResource("1_2q6dc")]
@@ -16,3 +19,11 @@ position = Vector2(0, -13)
 
 [node name="Meteor" parent="." unique_id=164773529 instance=ExtResource("3_mx8sn")]
 position = Vector2(529, 145)
+
+[node name="Borders" type="Node2D" parent="." unique_id=173986610]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=1238833708]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=2007143442]
+position = Vector2(1229, 357)
+shape = SubResource("RectangleShape2D_60jjh")
