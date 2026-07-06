@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cyqqgordmh7pa"]
+
+[ext_resource type="Texture2D" uid="uid://c0msc08ewnvhp" path="res://PNG/Meteors/meteorBrown_big1.png" id="1_tcwo0"]
+
+[node name="Meteor" type="Node2D" unique_id=164773529]
+rotation = -0.19373155
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=832618072]
+position = Vector2(0.80745506, 6.2728004)
+scale = Vector2(0.67411786, 0.67411786)
+texture = ExtResource("1_tcwo0")
