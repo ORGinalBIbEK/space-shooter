@@ -1,11 +1,23 @@
 [gd_scene format=3 uid="uid://cyqqgordmh7pa"]
 
+[ext_resource type="Script" uid="uid://brkwfl1v3w61x" path="res://scenes/meteor.gd" id="1_pxso2"]
 [ext_resource type="Texture2D" uid="uid://c0msc08ewnvhp" path="res://PNG/Meteors/meteorBrown_big1.png" id="1_tcwo0"]
 
-[node name="Meteor" type="Node2D" unique_id=164773529]
+[sub_resource type="CircleShape2D" id="CircleShape2D_hasw5"]
+radius = 53.460262
+
+[node name="Meteor" type="Area2D" unique_id=366063645]
 rotation = -0.19373155
+script = ExtResource("1_pxso2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=832618072]
-position = Vector2(0.80745506, 6.2728004)
-scale = Vector2(0.67411786, 0.67411786)
+position = Vector2(-0.19252491, 0.9812927)
+rotation = 0.16934381
+scale = Vector2(0.9867101, 1.0130559)
 texture = ExtResource("1_tcwo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=69098001]
+position = Vector2(-1.7700634, -1.3663366)
+shape = SubResource("CircleShape2D_hasw5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
