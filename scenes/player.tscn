@@ -8,6 +8,3 @@ script = ExtResource("1_g2els")
 
 [node name="PlayerImage" type="Sprite2D" parent="." unique_id=1390925154]
 texture = ExtResource("1_3vyb7")
-
-[node name="PlayerImage2" type="Sprite2D" parent="." unique_id=1205603211]
-texture = ExtResource("1_3vyb7")
