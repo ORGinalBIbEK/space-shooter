@@ -5,7 +5,4 @@ func _ready():
 
 func _process(delta):
 	var direction=Input.get_vector("left","right","up","down")
-	if Input.is_action_pressed("ui_down"):
-		position += Vector2(1,0) * 50 * delta
-		$PlayerImage.rotation +=0.1*delta
-	
+	position+= direction *500 * delta
