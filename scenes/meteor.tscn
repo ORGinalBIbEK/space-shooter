@@ -8,6 +8,7 @@ radius = 38.63936
 
 [node name="Meteor" type="Area2D" unique_id=366063645]
 rotation = -0.19373155
+collision_mask = 2
 script = ExtResource("1_pxso2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=832618072]
