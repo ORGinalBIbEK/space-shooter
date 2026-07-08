@@ -6,6 +6,10 @@ var direction_x:float
 
 func _ready():
 	var rng:= RandomNumberGenerator.new()
+	
+	#texture
+	var path:String="res://PNG/Meteors/meteorBrown_tiny2.png"
+	
 	#start position
 	var width=get_viewport().get_visible_rect().size[0]
 	var random_x=rng.randi_range(0,width)

@@ -48,6 +48,7 @@ position = Vector2(635, 769)
 shape = SubResource("RectangleShape2D_w8frs")
 
 [node name="MeteorTimer" type="Timer" parent="." unique_id=2105977179]
+wait_time = 0.25
 autostart = true
 
 [node name="Meteros" type="Node2D" parent="." unique_id=448544635]
