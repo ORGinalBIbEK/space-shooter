@@ -13,11 +13,13 @@ func _ready():
 	position =Vector2(random_x,random_y)
 	
 	#speed/rotation/direction
-	var speed= rng.randi_range(200,500)
-	
+	speed= rng.randi_range(200,500)
+	direction_x=rng.randf_range(-1,1)
+	rotation_speed=rng.randi_range(40,100)
 	
 func _process(delta):
-	position+=Vector2(0,1.0)*speed*delta
+	position+=Vector2(direction_x,1.0)*speed*delta
+	rotation_degrees+=rotation_speed*delta
 	
 func _on_body_entered(body) :
 	print('body entered')

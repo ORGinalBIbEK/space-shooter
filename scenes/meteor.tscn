@@ -4,20 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://c0msc08ewnvhp" path="res://PNG/Meteors/meteorBrown_big1.png" id="1_tcwo0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hasw5"]
-radius = 53.460262
+radius = 27.658636
 
 [node name="Meteor" type="Area2D" unique_id=366063645]
 rotation = -0.19373155
 script = ExtResource("1_pxso2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=832618072]
-position = Vector2(-0.19252491, 0.9812927)
+position = Vector2(-0.19252586, 0.9812918)
 rotation = 0.16934381
-scale = Vector2(0.9867101, 1.0130559)
+scale = Vector2(0.5515279, 0.60539365)
 texture = ExtResource("1_tcwo0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=69098001]
-position = Vector2(-1.7700634, -1.3663366)
+position = Vector2(1.1738129, -0.78876877)
 shape = SubResource("CircleShape2D_hasw5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
