@@ -57,4 +57,6 @@ autostart = true
 
 [node name="Meteros" type="Node2D" parent="." unique_id=448544635]
 
+[node name="Lasers" type="Node2D" parent="." unique_id=1493134812]
+
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
