@@ -14,4 +14,4 @@ func _process(delta):
 	
 	#shoot input
 	if Input.is_action_just_pressed("shoot"):
-		laser.emit(position )
+		laser.emit($LaserStartPosition.position)
