@@ -63,5 +63,7 @@ theme_override_constants/margin_bottom = 10
 
 [node name="Label" type="Label" parent="MarginContainer" unique_id=2017483337]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xeevv")
+theme_override_font_sizes/font_size = 24
 text = "Press Space to Continue
 "
