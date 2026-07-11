@@ -20,3 +20,9 @@ polygon = PackedVector2Array(-8, -36, 8, -37, 11, -14, 35, 2, 40, 0, 45, -4, 49,
 [node name="LaserStartPosition" type="Marker2D" parent="." unique_id=575234642]
 position = Vector2(0, -56)
 gizmo_extents = 110.0
+
+[node name="LaserTimer" type="Timer" parent="." unique_id=985293149]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="timeout" from="LaserTimer" to="." method="_on_laser_timer_timeout"]
