@@ -8,3 +8,7 @@ func _on_meteor_timer_timeout() -> void:
 	var meteor = meteor_scene.instantiate()
 	#3. attach the node to the scene tree
 	$Meteros.add_child(meteor)
+
+
+func _on_player_laser() -> void:
+	print("shoot laser")

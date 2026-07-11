@@ -13,3 +13,4 @@ func _process(delta):
 	move_and_slide() 
 	
 	#shoot input
+	laser.emit()
