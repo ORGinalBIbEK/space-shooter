@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed: int=500
 
-signal laser
+signal laser(position)
 
 func _ready():
 	position=Vector2(100,500)
@@ -13,4 +13,5 @@ func _process(delta):
 	move_and_slide() 
 	
 	#shoot input
-	laser.emit()
+	if Input.is_action_just_pressed("shoot"):
+		laser.emit(position )

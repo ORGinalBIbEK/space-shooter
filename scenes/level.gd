@@ -10,5 +10,6 @@ func _on_meteor_timer_timeout() -> void:
 	$Meteros.add_child(meteor)
 
 
-func _on_player_laser() -> void:
+func _on_player_laser(pos) -> void:
 	print("shoot laser")
+	print(pos)
