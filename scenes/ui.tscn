@@ -58,3 +58,6 @@ layout_mode = 2
 texture = ExtResource("2_yev5y")
 expand_mode = 2
 stretch_mode = 4
+
+[node name="ScoreTimer" type="Timer" parent="." unique_id=1479645094]
+autostart = true

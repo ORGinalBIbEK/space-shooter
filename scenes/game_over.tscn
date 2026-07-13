@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bx13i38eaf4bv"]
 
+[ext_resource type="Script" uid="uid://u404xavtoiqi" path="res://scenes/game_over.gd" id="1_wqhvx"]
 [ext_resource type="FontFile" uid="uid://dmgteuhrrtsvd" path="res://Bonus/kenvector_future_thin.ttf" id="1_xeevv"]
+[ext_resource type="PackedScene" uid="uid://cbyp1xwa5d3e1" path="res://scenes/level.tscn" id="2_tbwuq"]
 
 [node name="GameOver" type="Control" unique_id=1234670725]
 layout_mode = 3
@@ -9,6 +11,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wqhvx")
+level_scene = ExtResource("2_tbwuq")
 
 [node name="BG" type="ColorRect" parent="." unique_id=485280437]
 layout_mode = 1
