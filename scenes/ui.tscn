@@ -26,7 +26,7 @@ theme_override_colors/font_color = Color(0.5372549, 0.84705883, 0.5647059, 1)
 theme_override_colors/font_shadow_color = Color(0.78416824, 0.4918279, 0.58959436, 0)
 theme_override_fonts/font = ExtResource("1_x4jx1")
 theme_override_font_sizes/font_size = 40
-text = "rrwrw"
+text = "0s"
 horizontal_alignment = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="." unique_id=642937128]
