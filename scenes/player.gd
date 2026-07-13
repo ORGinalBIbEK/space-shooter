@@ -18,6 +18,7 @@ func _process(_delta):
 		laser.emit($LaserStartPosition.global_position)
 		can_shoot=false
 		$LaserTimer.start()
+		$AudioStreamPlayer2D.play()
 
 
 func _on_laser_timer_timeout() -> void:
