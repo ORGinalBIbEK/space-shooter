@@ -2,13 +2,13 @@
 - A archade style space shooter built with Godot Engine and GD Script. Pilot your spaceship , destroy incoming meteors , avoid meteors, avoid collisions and survive as long as possible while achieving the highest score.
 
 ✨ Features
-.Smooth player movement
-.Laser shooting mechanics
-.Random meteor spawning
-.Collision detection
-.Score tracking
-.Sound effect
-.Game Over Screen
+- Smooth player movement
+- Laser shooting mechanics
+- Random meteor spawning
+- Score tracking
+- Sound effects
+- Game Over screen
+- Collision Detection
 
 🛠️ Built With
 Engine: Godot 4.x
