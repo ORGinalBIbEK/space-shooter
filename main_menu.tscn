@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ddk1wx5cq8npc"]
 
 [ext_resource type="Texture2D" uid="uid://cnl5nmeq6ga2l" path="res://Backgrounds/darkPurple.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://cj0i6tdbqxj27" path="res://main_menu.gd" id="1_jix8l"]
 [ext_resource type="FontFile" uid="uid://dmgteuhrrtsvd" path="res://Bonus/kenvector_future_thin.ttf" id="2_7vrkn"]
 [ext_resource type="FontFile" uid="uid://5h2x8rkfhn1n" path="res://Bonus/kenvector_future.ttf" id="2_fu7sn"]
 
@@ -25,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jix8l")
 
 [node name="Panel" type="Panel" parent="." unique_id=1307207943]
 layout_mode = 1
@@ -57,6 +59,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_60jjh")
 text = "Start Game"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=853869448]
@@ -66,6 +74,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_60jjh")
 text = "Options"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=408218346]
@@ -75,6 +89,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_7vrkn")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_60jjh")
 text = "Exit"
 
 [node name="Label" type="Label" parent="." unique_id=1670496223]
@@ -97,3 +117,7 @@ theme_override_font_sizes/font_size = 70
 text = "Space Shooter"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="exit"]
