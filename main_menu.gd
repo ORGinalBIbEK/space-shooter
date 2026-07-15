@@ -18,5 +18,8 @@ func _on_option_pressed() -> void:
 	print("option pressed")
 
 
+
 func exit() -> void:
-	get_tree().quit()
+		print("exit pressed")
+		get_tree().quit()
+		
