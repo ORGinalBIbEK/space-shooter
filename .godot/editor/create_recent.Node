@@ -1,0 +1,14 @@
+Label
+TextureRect
+Panel
+VBoxContainer
+Button
+AudioStreamPlayer2D
+Timer
+MarginContainer
+CenterContainer
+ColorRect
+HBoxContainer
+CanvasLayer
+Node2D
+AnimatedSprite2D
