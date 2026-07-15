@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ddk1wx5cq8npc"]
 
 [ext_resource type="Texture2D" uid="uid://cnl5nmeq6ga2l" path="res://Backgrounds/darkPurple.png" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://dmgteuhrrtsvd" path="res://Bonus/kenvector_future_thin.ttf" id="2_7vrkn"]
+[ext_resource type="FontFile" uid="uid://5h2x8rkfhn1n" path="res://Bonus/kenvector_future.ttf" id="2_fu7sn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60jjh"]
 texture = ExtResource("1_06t4h")
@@ -40,10 +42,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -82.0
-offset_top = -67.0
-offset_right = 82.0
-offset_bottom = 67.0
+offset_left = -136.5
+offset_top = -86.0
+offset_right = 169.83142
+offset_bottom = 107.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 9
@@ -52,7 +54,8 @@ theme_override_constants/separation = 9
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
 text = "Start Game"
 
@@ -60,7 +63,8 @@ text = "Start Game"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
 text = "Options"
 
@@ -68,6 +72,28 @@ text = "Options"
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
 text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=1670496223]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -301.5
+offset_top = -191.0
+offset_right = 301.5
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 70
+text = "Space Shooter"
+horizontal_alignment = 1
+vertical_alignment = 1
