@@ -14,36 +14,38 @@
 Engine: Godot 4.x
 Language: GDScript
 
-🎮 Controls
-Key	                  Action
- ↑	                  Move Up
- ↓	                  Move Down
- ←	                  Move Left
- →	                  Move Right
-Space/right button    Shoot
+## Controls
+
+| Key | Action |
+|------|--------|
+|   ↑   | Move Up |
+|   ←   | Move Left |
+|   ↓   | Move Down |
+|   →   | Move Right |
+| Space | Shoot |
+
+## How to Play
+
+1. Launch the game.
+2. Move the spaceship using **Arrow Keys**.
+3. Press **Space** to shoot.
+4. Destroy meteors to survive.
+5. Avoid collisions.
+6. Try to achieve the highest score.
 
 
 ▶️ How to Run
-Option 1
-
+- Option 1
 Download the latest release and run:
-
 SpaceShooter.exe
-Option 2
-
+- Option 2
 Open the project using Godot 4.x and press F5.
 
 
-
-🧠 What I Learned
-This project helped me learn:
-
-Godot scene system
-GDScript programming
-Collision detection
-Signals
-Timers
-Instancing scenes
-Random object spawning
-UI creation
-Game state management
+🚀 Future Improvements
+- Enemy spaceships
+- Power-ups
+- Multiple levels
+- Boss battles
+- High score saving
+- Difficulty progression
