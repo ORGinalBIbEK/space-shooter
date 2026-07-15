@@ -11,12 +11,7 @@ func _process(_delta: float) -> void:
 	pass
 
 func _on_start_pressed() -> void:
-	print("start pressed")
-
-
-func _on_option_pressed() -> void:
-	print("option pressed")
-
+	get_tree().change_scene_to_file("res://scenes/level.tscn")
 
 
 func exit() -> void:

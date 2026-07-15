@@ -46,8 +46,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -136.5
 offset_top = -86.0
-offset_right = 169.83142
-offset_bottom = 107.0
+offset_right = 155.0
+offset_bottom = 70.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 9
@@ -66,21 +66,6 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_60jjh")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_60jjh")
 text = "Start Game"
-
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=853869448]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_fu7sn")
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_60jjh")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_60jjh")
-text = "Options"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=408218346]
 layout_mode = 2
@@ -119,5 +104,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_option_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="exit"]
